@@ -1,21 +1,13 @@
-function GridItem({number}) {
+function GridItem({ number }) {
   return (
     <div style={{
-        backgroundColor: 'lightblue', 
-        display: 'grid', 
-        placeItems: 'center',
-        // border: '1px solid black',
+      backgroundColor: 'lightblue',
+      display: 'grid',
+      placeItems: 'center',
+      overflow: 'hidden'
     }}>
-        <div style={{
-            // backgroundColor: 'wheat', 
-            aspectRatio: '1/1', 
-            width: '100%',
-            border: '1px solid black',
-            display: 'grid',
-            // placeItems: 'center',
-        }}></div>
-        {/* }}>{number}</div> */}
-    </div>
+      {number}
+    </div >
   )
 }
 
